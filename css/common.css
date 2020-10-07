@@ -1,0 +1,529 @@
+/* 초기화 스타일 CSS */
+
+* { margin:0; padding: 0; }
+/* body { overflow-x: hidden;} */
+ul { list-style: none; padding: 0; }
+li { margin:0;}
+
+body { color:rgb(29,29,31);}
+
+@font-face { 
+   font-family:'SF Pro KR';
+   font-style: normal;
+   font-weight: 200;
+   src: url(../font/SFProKRDisplay_light.woff2) format('woff2');
+   }
+
+
+@font-face { 
+   font-family:'SF Pro KR';
+   font-style: normal;
+   font-weight: 400;
+   src: url(../font/SFProKRDisplay_regular.woff2) format('woff2');
+   }
+
+@font-face { 
+   font-family:'SF Pro KR';
+   font-style: normal;
+   font-weight: 600;
+   src: url(../font/SFProKRDisplay_semibold.woff2) format('woff2');
+   }
+
+@font-face { 
+   font-family:'SF Pro KR';
+   font-style: normal;
+   font-weight: 800;
+   src: url(../font/SFProKRDisplay_bold.woff2) format('woff2');
+   } 
+
+@font-face { 
+   font-family:'SF Pro Display' ;
+   font-style: normal;
+   font-weight: 400;
+   src: url(../font/sf-pro-display_regular.woff2) format('woff2');
+   }
+
+@font-face { 
+   font-family:'SF Pro Display' ;
+   font-style: normal;
+   font-weight: 600;
+   src: url(../font/sf-pro-display_semibold.woff2) format('woff2');
+   }
+
+
+@font-face { 
+   font-family:'SF Pro Text' ;
+   font-style: normal;
+   font-weight: 400;
+   src: url(../font/sf-pro-text_regular.woff2) format('woff2');
+   }
+
+@font-face { 
+   font-family:'SF Pro Text' ;
+   font-style: normal;
+   font-weight: 600;
+   src: url(../font/sf-pro-text_semibold.woff2) format('woff2');
+   } 
+
+/* Typo 스타일 */
+
+h1 {   }
+
+h2 { 
+   font-family:'SF Pro KR', 'SF Pro Display', serif;
+   font-size:56px;
+   font-weight:600;
+   font-style: normal;
+   line-height: 66px;
+   -webkit-font-smoothing: antialiased;
+}
+
+h3 {  
+   font-family: 'SF Pro KR', 'SF Pro Display', serif;
+   font-size:28px;
+   font-weight:400;
+   font-style: normal;
+   line-height: 31px;
+   -webkit-font-smoothing: antialiased;
+}
+
+h4 { 
+
+}
+h5 {   }
+
+h6 { }
+
+p {          
+   font-family: 'SF Pro KR', 'SF Pro Text'  serif;
+   font-size:12px;
+   font-weight:400;
+   font-style: normal;
+   line-height: 16.8px;  
+   -webkit-font-smoothing: antialiased;
+}
+
+.h4_large_40 { 
+font-family: 'SF Pro KR','SF PRo Display', sans-serif;
+font-size:40px;
+font-weight:600;
+font-style:normal;
+line-height:44px; 
+-webkit-font-smoothing: antialiased;
+}
+
+.h5_large_21 { 
+   font-family: 'SF Pro KR', 'SF PRo Display',sans-serif;
+   font-size:21px;
+   font-weight:400;
+   font-style:normal;
+   line-height:26px;
+   -webkit-font-smoothing: antialiased; }
+
+.p_large_17 {
+   font-family: 'SF Pro KR', 'SF Pro Text' sans-serif;
+   font-size:17px;
+   font-weight:400;
+   font-style: normal;
+   line-height: 27px;  }
+
+/* 링크 스타일 */
+
+a:link {  text-decoration: none; color:#2997ff; }
+a:hover {  text-decoration: underline; color:#2997ff; }
+a:active {  text-decoration: none; color:#2997ff; }
+a:visited {  text-decoration: none; color:#2997ff; }
+
+.text_decoration_none {text-decoration:none;}
+
+/* 정렬 스타일 */
+
+.text_align_center {  text-align: center; }
+
+/* 컬러 관련 스타일 */
+
+.bg_color_white { background-color:white;  }
+.bg_color_dark { background-color:rgb(19,19,19);}
+.bg_color_gray_250 { background-color:rgb(250,250,250);} 
+
+.color_white_245 { color:rgb(245,245,247);} 
+.color_gray_134 {color: rgb(134,134,139);}  
+
+/* 여백 관련 스타일 */
+
+.margin_top_6 { margin-top:6px;}
+.margin_top_7 { margin-top:7px;}
+.margin_top_14 { margin-top:14px;}
+.margin_bottom_12 { margin-top:14px;}
+
+
+/* Header 부분 스타일 */
+
+/* gnb 스타일 */
+#gnb_m {display: none;}
+
+#gnb { background-color: rgba(0, 0, 0, 0.8); position: fixed; width: 100%; top:0; left:0; } 
+ 
+.nav_menu { list-style:none; display: flex;
+justify-content: space-between;
+width: 980px; height: 44px;  margin: 0 auto; padding:0; }
+
+.nav_menu_logo { line-height: 44px; opacity: 0.8; }
+.nav_menu_logo:hover { opacity: 1; }
+
+.nav_menu li {  text-decoration:none;} 
+
+.nav_menu a:link { text-decoration:none; }
+
+.nav_menu_item { margin: 0 0 0 0px;
+font-family: 'SF Pro KR', sans-serif;
+font-size:14px;
+font-weight:400;
+font-style:normal;
+line-height:44px;
+color:rgb(245,245,247);
+opacity: 0.8;
+}
+            
+.nav_menu_item:hover { opacity: 1; text-decoration: none;}
+
+/* .nav_menu a:last-child {
+   display: none;
+   /* visibility: hidden; */
+/* } */ 
+
+
+/* 푸터 부분 스타일 */
+
+footer { background-color: rgb(245,245,247);  }
+
+.footer_wrap { width:1000px; padding: 0 10px; margin: 0 auto; box-sizing: border-box;}
+.footer_note { 
+padding:17px 0 11px;
+border-bottom: 1px solid rgb(210,210,215);
+color:rgb(134,134,139);
+}
+.footer_menu { display:flex;
+padding:20px 0;
+}
+.footer_menu_column { width: 196px;}
+.footer_menu_group { 
+list-style: none;
+padding:0;
+
+font-family: 'SF Pro KR', sans-serif;
+font-size:12px;
+font-weight:400;
+font-style: normal;
+line-height: 16px;
+color:rgb(81,81,84);
+}
+.footer_menu_item { margin:0 0 6.8px; }
+
+/* .footer_menu_item_text { color:green; } */
+
+.footer_menu_group li { margin:0 0 6.8px; color:rgb(134,134,139); }
+.footer_menu_group li:first-child { font-weight: 600; color:rgb(29,29,31); display: flex; justify-content: space-between; padding: 0 10px 0 0;}
+
+.footer_menu_group li:first-child span { display: none;}
+
+.footer_menu_group a {color:rgb(134,134,139);}
+.footer_menu_group a:hover {color:rgb(81,81,84);}
+
+
+.font_weight_600 { font-weight: 600;}
+.color_gray_29 {color:rgb(29,29,31);}
+.footer_contact { border-bottom:1px solid rgb(210,210,215);
+padding: 0 0 7px; margin:0 0 8px;
+color:rgb(134,134,139); }
+
+.footer_copyright_wrap { display: flex; justify-content: space-between;}
+
+.footer_copyright { margin:5px 0;
+color:rgb(134,134,139); }
+
+.footer_copyright a { color:rgb(134,134,139); padding: 0 12px 0 ; border-right:1px solid rgb(134,134,139); }
+.footer_copyright a:hover { color:rgb(29,29,31);}
+
+.footer_address { 
+font-family: 'SF Pro KR', sans-serif;
+font-size:11px;
+font-weight:400;
+font-style: normal;
+line-height: 15px;
+color:rgb(134,134,139);
+padding: 0 0 20px;
+}
+
+/* #gnb_m { display:none;} */
+
+/* CSS Selector 연습 */
+
+/* #gnb ul { border: 1px solid red;} */
+
+/* #gnb li { border: 1px solid red;} */
+
+/* #gnb .nav_menu_logo { border: 1px solid red;} */
+
+/* .nav_menu a:nth-child(4n-1) { border: 1px solid red;}  */
+
+/* .nav_menu a:nth-child(2) + a { border: 1px solid red;}  */ 
+
+/* 모바일 해상도 CSS   */
+
+@media screen and (max-width:767px) {
+
+
+   h2 { 
+      font-family:'SF Pro KR', 'SF Pro Display', serif;
+      font-size:48px;
+      font-weight:600;
+      font-style: normal;
+      line-height: 60px;
+      -webkit-font-smoothing: antialiased;
+   }
+   
+   h3 {  
+      font-family: 'SF Pro KR', 'SF Pro Display', serif;
+      font-size:19px;
+      font-weight:400;
+      font-style: normal;
+      line-height: 29px;
+      -webkit-font-smoothing: antialiased;
+   }
+   
+   p {          
+      font-family: 'SF Pro KR', 'SF Pro Text'  serif;
+      font-size:12px;
+      font-weight:400;
+      font-style: normal;
+      line-height: 16px;  
+      -webkit-font-smoothing: antialiased;
+   }
+   
+   .h4_large_40 { 
+      font-family: 'SF Pro KR','SF PRo Display', sans-serif;
+      font-size:36px;
+      font-weight:600;
+      font-style:normal;
+      line-height:44px; 
+      -webkit-font-smoothing: antialiased;
+   }
+   
+   .h5_large_21 { 
+      font-family: 'SF Pro KR', 'SF PRo Display',sans-serif;
+      font-size:19px;
+      font-weight:400;
+      font-style:normal;
+      line-height:26px;
+      -webkit-font-smoothing: antialiased; }
+   
+   .p_large_17 {
+      font-family: 'SF Pro KR', 'SF Pro Text' sans-serif;
+      font-size:15px;
+      font-weight:400;
+      font-style: normal;
+      line-height: 27px;  }
+
+
+
+
+
+
+   header { width: 100%;}
+
+   #gnb { display: none;}
+
+   #gnb_m { 
+      display: block;
+      background-color: rgba(0, 0, 0, 0.8); 
+      position: fixed; 
+      width: 100%; 
+      top:0; 
+      left:0; 
+      box-sizing: border-box;
+      z-index: 999;
+   } 
+
+   .nav_menu_m { 
+      list-style:none;      
+      display: flex;
+      justify-content:space-between;
+      width: 100%; 
+      height: 44px;  
+      padding:0 16px 0 9px;
+      box-sizing: border-box; 
+   }
+      
+   .nav_menu_m_logo { line-height: 44px; opacity: 0.8; }
+
+   .nav_menu_m_logo:hover { opacity: 1; }
+     
+   .nav_menu_m li {  text-decoration:none;} 
+      
+   .nav_menu_m a:link { text-decoration:none; }
+      
+   .nav_menu_m_item { 
+      margin: 0 0 0 0;
+      font-family: 'SF Pro KR', sans-serif;
+      font-size:14px;
+      font-weight:400;
+      font-style:normal;
+      line-height:44px;
+      color:rgb(245,245,247);
+      opacity: 0.8;
+   }
+                  
+   .nav_menu_m_item:hover { opacity: 1; text-decoration: none;}
+
+   .nav_menu_m_button { 
+      display: block; 
+      position: relative;
+      width: 30px; height:44px;
+      top:0; left:0;
+      /* border: 1px solid lightgray; */
+      z-index: 10000;
+   }
+
+   .nav_menu_m_button span:first-child {
+      display: block; position: absolute;
+      width: 16px; height: 1px;
+      top:16px; left: 7px;
+      border-top:1px solid white;
+      transition: all 0.4s ;
+  }
+  
+  .nav_menu_m_button span:nth-child(2) {
+      display: block; position: absolute;
+      width: 16px; height: 1px;
+      top:22px; left: 7px;
+      border-top:1px solid white;
+      /* transition: all 0.4s; */
+   }
+
+  .nav_menu_m_button span:last-child {
+      display: block; position: absolute;
+      width: 16px; height: 1px;
+      top:28px; left: 7px;
+      border-top:1px solid white;
+      transition: all 0.4s;
+   }  
+
+   .nav_menu_m_button:hover span:first-child {
+      transform: rotate(45deg); 
+      top:22px;
+   }
+
+   .nav_menu_m_button:hover span:nth-child(2) {
+      /* display: none; */
+      visibility: hidden;
+   }
+
+   .nav_menu_m_button:hover span:last-child {
+      transform: rotate(-45deg); 
+      top:22px;
+   }
+
+
+   /* 푸터 부분 스타일 */
+
+   footer { background-color: rgb(245,245,247);  }
+
+   .footer_wrap { 
+      width:100%; 
+      padding: 0 10px; 
+      margin: 0 auto; 
+      box-sizing: border-box;
+
+   }
+
+   .footer_note { 
+      padding:17px 0 11px;
+      border-bottom: 1px solid rgb(210,210,215);
+      color:rgb(134,134,139);
+      word-break: keep-all;
+   }
+   .footer_menu { 
+      display:flex;
+      padding:20px 0; 
+      flex-wrap: wrap;
+   }
+
+   .footer_menu_column { width: 100%;}
+
+   .footer_menu_group { 
+      list-style: none;
+      padding:0;
+      font-family: 'SF Pro KR', sans-serif;
+      font-size:12px;
+      font-weight:400;
+      font-style: normal;
+      line-height: 16px;
+      color:rgb(134,134,139);
+      height: 14px;
+      overflow: hidden;
+      margin: 0 0 10px 0;
+      padding: 0 0 10px 0; 
+      border-bottom: 1px solid rgba(134,134,139,0.3) ;
+
+   }
+
+   .footer_menu_item { margin:0 0 6.8px; }
+
+   .footer_menu_group li { margin:0 0 6.8px; color:rgb(134,134,139); }
+
+   .footer_menu_group li:first-child { font-weight: 600; color:rgb(81,81,84);}
+
+   .footer_menu_group li:first-child span { display: block;}
+
+   .footer_menu_group a {color:rgb(134,134,139);}
+
+   .footer_menu_group a:hover {color:rgb(81,81,84);}
+
+   .font_weight_600 { font-weight: 600;}
+
+   .color_gray_29 {color:rgb(29,29,31);}
+
+   .footer_contact { 
+      border-bottom:1px solid rgb(210,210,215);
+      padding: 0 0 7px; margin:0 0 8px;
+      color:rgb(134,134,139);
+      word-break: keep-all; 
+   }
+
+   .footer_copyright_wrap { 
+      display: flex; 
+      justify-content: space-between;  
+      flex-direction: column-reverse;
+   }
+
+   .footer_copyright_wrap span {display: block; margin: 6px 0;}
+
+   .footer_copyright { 
+      margin:5px 0;
+      color:rgb(134,134,139); 
+   }
+
+   .footer_copyright a { 
+      color:rgb(134,134,139); 
+      padding: 0 12px 0 0 ; 
+      margin: 0 12px 0 0; 
+      border-right:1px solid rgb(134,134,139); 
+   }
+
+   .footer_copyright a:hover { color:rgb(29,29,31);}
+
+   .footer_address { 
+      font-family: 'SF Pro KR', sans-serif;
+      font-size:11px;
+      font-weight:400;
+      font-style: normal;
+      line-height: 15px;
+      color:rgb(134,134,139);
+      padding: 0 0 20px;
+   }
+
+   .footer_address span { display: block;}
+
+
+}
